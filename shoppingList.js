@@ -12,7 +12,9 @@ var groceries = {
 
 const shoppingListCost = (arr) => {
     let groceryList = { ...groceries }
+    // let groceryList = {}
     let total = 0
+
 
     // Populate the full grocery list 
     for (let item in groceryList) {
@@ -52,8 +54,8 @@ const shoppingListCost = (arr) => {
 }
 
 console.log(shoppingListCost([["Chocolate", 3], ["Apples", 8], ["Orange Juice", 15], ["Pears", 1]])) // => 73.25
-console.log(shoppingListCost([["Orange Juice", 2], ["Chocolate", 4]])) // => 6.7 
-console.log(shoppingListCost([["Chocolate", 5], ["Orange Juice", 15]])) // => 26.25 
-console.log(shoppingListCost([["Pears", 4], ["Chocolate", 87], ["Sweetcorn", 3]])) // => 98.4
-console.log(shoppingListCost([["Orange Juice", 100]])) // => 135 
+// console.log(shoppingListCost([["Orange Juice", 2], ["Chocolate", 4]])) // => 6.7 
+// console.log(shoppingListCost([["Chocolate", 5], ["Orange Juice", 15]])) // => 26.25 
+// console.log(shoppingListCost([["Pears", 4], ["Chocolate", 87], ["Sweetcorn", 3]])) // => 98.4
+// console.log(shoppingListCost([["Orange Juice", 100]])) // => 135 
 
